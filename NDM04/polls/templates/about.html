@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Экспертиза НМК - NDM03(О сайте)</title>
+</head>
+<body bgcolor="#8B0000" background="nubex.png">
+     <font style="color: yellow; font-size: 20px">
+
+	
+    <h1><center>сайт Экспертиза НМК - NDM04, version 04</center></h1>
+    <h2><center>(страница "О сайте")</center></h2>       
+
+	<h3><center>Сайт предназначен для специалистов неразрушающего контроля (NDT)</center></h3>
+    <h4><center>templates/about.html</center></h4>
+	
+	
+<!вывод инфl>
+    <p>               </p>
+    <p>Сегодня {% now "j/m/Y" %}</p>
+    <p>Вы зашли на эту страницу в {% now "H:i:s" %} плюс 3 часа (Московское время)</p>
+
+	<img src="{% static 'images/image14.jpg' %}" align="left" hspace="20" style="width:250px; height:400px;"  align="absmiddle">   
+	
+
+   
+	<p><strong><em>  Кнопки на Главной странице:</em></strong></p>
+    <p><strong><em>   - кнопка "ргд01" выводит на страницу сайта с расчетами схем рис. 3а и рис. 3б ГОСТ Р 50.05.07—2018  </em></strong></center></p>
+    <p><strong><em>   - кнопка "панорама" выводит на страницу сайта с расчетами схемы рис. 3е (панорамное просвечивание) ГОСТ Р 50.05.07—2018 </em></strong></center></p>
+    <p><strong><em>   - кнопка "активность " выводит на страницу сайта с расчетами активности источника излучения Иридий-192 в зависимости от времени хранения этих источников.  </em></strong></center></p>
+    <p><strong><em>   - кнопка "узд01" выводит на страницу сайта с расчетами необходимой длины L цилиндрической части расточки сварного соединения, чтобы ультразауковой контроль этого соединения был возможен.  </em></strong></center></p>
+    <p><strong><em>   - кнопка "Темы в НМК" выводит на страницу сайта, где даются выдержки из тем, обсуждаемых на форуме сайта "Дефектоскопист.ру". </em></strong></center></p>
+
+
+	<img src="{% static 'images/image16.jpg' %}" align="left" hspace="20" style="width:250px; height:350px;"  align="absmiddle">   
+
+		
+	<p><strong><em>  Сайт предполагает, что пользователь может пересчитать полученные на 
+	сайте результаты иными способами,  то есть  выполнить, при необходимости, 
+	верификацию программного обеспечения данного сайта</em></strong></p>
+    <p><strong><em>     </em></strong></center></p>
+    <p><strong><em>     </em></strong></center></p>
+
+
+    <h2><button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = 'https://defektoskopist.ru/forums/';">Сайт Дефектоскопист.ру</button>
+    <button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/';">ГЛАВНАЯ</button></h2>
+	<button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/tema01';">Темы в НМК</button>
+    <button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/rgd';">rgd01</button>
+    <button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/панорама';">панорама</button>
+    <button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/активность';">активность</button>
+    <button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/узд01';">узд01</button>		
+
+
+
+</body>
+</html>
+
+
+

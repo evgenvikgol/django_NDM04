@@ -1,0 +1,46 @@
+﻿
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title> экспозиция </title>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">	
+</head>
+<body bgcolor="#FDF5B6" background="nubex.png">
+
+    <h1>АКТИВНОСТЬ</h1>
+    <h2>templates/polls/активность.html</h2>
+    <img src="{% static 'images/image5.jpg' %}"	
+    
+<!вывод инфl>
+    <p>               </p>
+
+
+    <p>{% now "j/m/Y" %}</p>
+    <p>{% now "H:i:s" %} плюс 3 часа (Московское время)</p>
+    
+    <p>               </p>
+    <p>****************************************************************************               </p>
+    
+Определяем активность источника излучения Иридий-192 по состоянию на момент просвечивания (экспозиции), при указании даты зарядки источника и его первоначальной активности
+
+
+
+<p>               </p>	
+    <form method="POST">
+        {% csrf_token %}
+    <table>
+        {{ form }}
+    </table>
+    <input type="submit" value="Отправить" >
+</form>
+
+
+       <h2><button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/';">вернуться на ГЛАВНУЮ</button></h2>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Экспертиза НМК - NDM04(О сайте)</title>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">		
+</head>
+<body bgcolor="#FDF5B6" background="nubex.png">
+
+    <h1 style="color:red"><center>сайт Экспертиза НМК - NDM04, version 04</center></h1>
+      
+	<h4><center>templates/polls/index.html</center></h4>
+	
+	<p color:red>Сегодня - {% now "j/m/Y" %}</p>
+    <p>Вы вошли на эту страницу в {% now "H:i:s" %}</p>
+	<img src="{% static 'images/image7.jpg' %}" align="left" hspace="20" style="width:300px; height:270px;"  align="absmiddle">
+	<!вывод инфl>
+
+	   
+	{% if latest_Вопрос_list %}
+		<ul>
+		{% for Вопрос in latest_Вопрос_list %}
+			<h3><em><li><a style="color:blue"; href="/polls/{{ Вопрос.id }}/">{{ Вопрос.Вопрос_text }}</a></li></em></h3>
+		{% endfor %}
+		</ul>
+	{% else %}
+		<p>No polls are available.</p>
+	{% endif %}
+
+	<p>               </p>	
+	<p>               </p>	
+	<p>               </p>	
+	
+
+    <button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/contact';">КОНТАКТЫ</button></h2>
+    <button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/about';">О сайте</button></h2>
+	<button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/tema01';">Темы в НМК</button></h2>
+    <button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/rgd';">rgd01</button></h2>
+	
+    <button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/панорама';">панорама</button></h2>
+    <button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/активность';">активность</button></h2>
+    <button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/узд01';">узд01</button></h2>		
+	
+	
+	
+
+</body>
+</html>
+
+
+

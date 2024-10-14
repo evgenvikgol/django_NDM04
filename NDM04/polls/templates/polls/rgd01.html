@@ -1,0 +1,55 @@
+﻿
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title> rgd01 </title>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">	
+</head>
+<body bgcolor="#FDF5B6" background="nubex.png">
+
+    <h2><center>ГОСТ Р 50.05.07—2018</center></h2>
+    <h3><center>ОЦЕНКА СООТВЕТСТВИЯ В ФОРМЕ КОНТРОЛЯ</center></h3>
+    <h3><center>Унифицированные методики. Радиографический контроль</center></h3>
+    <h4><center>templates/polls/rgd01.html</center></h4>
+            <p>Сегодня - {% now "j/m/Y" %}</p>
+    <p>Вы вошли на эту страницу в {% now "H:i:s" %}</p>
+<img src="{% static 'images/image11_1.jpg' %}" align="left" style="width:200px; height:250px;"  align="absmiddle">
+<!вывод инфl>
+    <p>  </p>
+
+    <p>               </p>
+    <p>****************************************************************************               </p>
+    
+Схема просвечивания - рисунок 3а.
+Фокусное расстояние f, мм, не менее - 0,7c(D - d)(для кольцевого сварного соединения);
+D и d — наружный и внутренний диаметры контролируемого сварного соединения, мм;
+Ф — размер фокусного пятна или активной части; К - чувствительность контроля; с = 2Ф/К
+
+
+<p>               </p>	
+    <form method="POST">
+        {% csrf_token %}
+    <table>
+        {{ form }}
+    </table>
+    <input type="submit" value="Отправить" >
+</form>
+    <h2><button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/';">вернуться на ГЛАВНУЮ</button></h2>
+	<img src="{% static 'images/image11_2.jpg' %}" align="left" style="width:170px; height:250px;"  align="absmiddle">
+    <p>               </p>
+    <p>****************************************************************************               </p>
+    
+Схема просвечивания - рисунок 3б.
+Расстояние f, мм, не менее - 0,5cD(для кольцевого сварного соединения)
+D и d — наружный и внутренний диаметры контролируемого сварного соединения, мм.
+
+
+
+<p>               </p>		
+	
+</body>
+</html>
+
+

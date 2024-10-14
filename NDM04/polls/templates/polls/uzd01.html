@@ -1,0 +1,48 @@
+﻿
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title> uzd01 </title>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">	
+</head>
+<body bgcolor="#FDF5B6" background="nubex.png">
+
+    <h2><center>ГОСТ Р 50.05.02—2018</center></h2>
+    <h3><center>ОЦЕНКА СООТВЕТСТВИЯ В ФОРМЕ КОНТРОЛЯ</center></h3>
+    <h3><center>Унифицированные методики. Ультразвуковой контроль сварных соединений</center></h3>
+    <h4><center>templates/polls/uzd01.html</center></h4>
+            <p>Сегодня - {% now "j/m/Y" %}</p>
+    <p>Вы вошли на эту страницу в {% now "H:i:s" %}</p>
+<img src="{% static 'images/uzd02.jpg' %}" align="left" style="width:300px; height:250px;"  align="absmiddle">
+<!вывод инфl>
+    <p>  </p>
+
+    <p>               </p>
+    <p>****************************************************************************               </p>
+    
+Пункт 6.8.6. Контроль сварных соединений труб с внутренней расточкой однажды отраженным лучом возможен, если длина L цилиндрической 
+части расточки не менее L= Htga+b+В+5 мм, где H - номинальная толщина трубы; a - угол ввода; B - полуширина усиления шва; 
+b - ширина околошовной зоны, подлежащей контролю
+
+<p>               </p>	
+    <form method="POST">
+        {% csrf_token %}
+    <table>
+        {{ form }}
+    </table>
+    <input type="submit" value="Отправить" >
+</form>
+    <h2><button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/';">вернуться на ГЛАВНУЮ</button></h2>
+    <p>               </p>
+    <p>****************************************************************************               </p>
+    
+
+
+<p>               </p>		
+	
+</body>
+</html>
+
+

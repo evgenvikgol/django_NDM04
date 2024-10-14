@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NDM03(КОНТАКТЫ)</title>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">	
+</head>
+
+<body bgcolor="#000" background="nubex.png">
+     <font style="color: silver; font-size: 22px">
+
+        <h2><center>КОНТАКТЫ</center></h2>
+
+       <h1><center>сайт Экспертиза НМК - NDM04, version 04</center></h1>
+       <h4><center>templates/contact.html</center></h4>
+
+
+<!вывод инфl >
+       <!-- Это встроенный стиль -->
+     <!font style="color: red">
+
+     <font style="color: yellow; font-size: 20px">
+
+	<p>               </p>	
+    <p><center>><strong><em>    
+	Сайт предназначен для специалистов неразрушающего контроля (NDT), 
+	которые имеют необходимость рассчитать математическими методами,
+	изложенными в соответствующих методиках (стандартах) по контролю
+	режимы и параметры радиографического и  ультразвукового контроля.
+  
+	Сайт предполагает, что пользователь может пересчитать полученные
+	на сайте результаты иными способами,  то есть  выполнить верификацию
+	программного обеспечения данного сайта (при возникшей необходимости)</em></strong></center></p>
+ 
+	<font style="color: white; font-size: 22px">
+	<p><center>><strong><em> 
+	Имя автора сайта - Евгений. Общение с автором в данный период 
+	возможно через электронную почту: golubevevg@yandex.ru                 
+	</em></strong></center></p>
+
+
+    <h2><button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = 'https://defektoskopist.ru/forums/';">defektoskopist.ru</button>
+	<button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/';">ГЛАВНАЯ</button>
+
+    <button class="btn-location" onclick="alert('Перенаправляем ...'); location.href = '/about';">О сайте</button></h2>
+
+	<p>               </p>
+	<img src="{% static 'images/image22.jpg' %}" align="left" hspace="20" vspace="20">   
+
+	<font style="color: white; font-size: 22px">
+	<p>    Сегодня {% now "j/m/Y" %}</p>
+    <p>    Вы зашли на эту страницу в {% now "H:i:s" %} (Московское время)</p>
+    
+
+</body>
+</html>
+
+
+
