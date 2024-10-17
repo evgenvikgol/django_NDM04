@@ -1,0 +1,193 @@
+
+C:\Program Files\Git>C:\Program Files\Git>git clon https://github.com/evgenvikgo
+l/django_NDM04.git
+"C:\Program" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Program Files\Git>git clon https://github.com/evgenvikgol/django_NDM04.git
+git: 'clon' is not a git command. See 'git --help'.
+
+The most similar commands are
+        clone
+        column
+
+C:\Program Files\Git>git clone https://github.com/evgenvikgol/django_NDM04.git
+Cloning into 'django_NDM04'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (4/4), done.
+
+C:\Program Files\Git>cd django_NDM04
+
+C:\Program Files\Git\django_NDM04>git add -A
+
+C:\Program Files\Git\django_NDM04>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .gitignore
+        new file:   NDM04/NDM04/__init__.py
+        new file:   NDM04/NDM04/asgi.py
+        new file:   NDM04/NDM04/settings.py
+        new file:   NDM04/NDM04/urls.py
+        new file:   NDM04/NDM04/wsgi.py
+        new file:   NDM04/manage.py
+        new file:   NDM04/polls/__init__.py
+        new file:   NDM04/polls/admin.py
+        new file:   NDM04/polls/apps.py
+        new file:   NDM04/polls/forms.py
+        new file:   NDM04/polls/migrations/0001_initial.py
+        new file:   NDM04/polls/migrations/__init__.py
+        new file:   NDM04/polls/models.py
+        new file:   NDM04/polls/static/css/styles.css
+        new file:   "NDM04/polls/static/images/200326\321\201\320\260\320\274\32
+1\201\321\203\320\275\320\263 018.gif"
+        new file:   NDM04/polls/static/images/image.GIF
+        new file:   NDM04/polls/static/images/image1.jpg
+        new file:   NDM04/polls/static/images/image10.jpg
+        new file:   NDM04/polls/static/images/image11.jpg
+        new file:   NDM04/polls/static/images/image112.jpg
+        new file:   NDM04/polls/static/images/image11_1.jpg
+        new file:   NDM04/polls/static/images/image11_2.jpg
+        new file:   NDM04/polls/static/images/image13.jpg
+        new file:   NDM04/polls/static/images/image14.jpg
+        new file:   NDM04/polls/static/images/image15.jpg
+        new file:   NDM04/polls/static/images/image16.jpg
+        new file:   NDM04/polls/static/images/image17.jpg
+        new file:   NDM04/polls/static/images/image18.jpg
+        new file:   NDM04/polls/static/images/image19.jpg
+        new file:   NDM04/polls/static/images/image22.jpg
+        new file:   NDM04/polls/static/images/image222.JPG
+        new file:   NDM04/polls/static/images/image3.jpg
+        new file:   NDM04/polls/static/images/image4.jpg
+        new file:   NDM04/polls/static/images/image5.jpg
+        new file:   NDM04/polls/static/images/image6.jpg
+        new file:   NDM04/polls/static/images/image7.jpg
+        new file:   NDM04/polls/static/images/image8.jpg
+        new file:   NDM04/polls/static/images/image9.jpg
+        new file:   NDM04/polls/static/images/uzd02.jpg
+        new file:   "NDM04/polls/static/images/\320\241\320\275\320\270\320\274\
+320\276\320\272111.JPG"
+        new file:   "NDM04/polls/static/images/\320\270\320\270\320\270 321.jpg"
+
+        new file:   "NDM04/polls/static/images/\320\270\320\270\320\270 393.jpg"
+
+        new file:   "NDM04/polls/static/images/\320\276\320\276\320\276 012\320\
+260.jpg"
+        new file:   "NDM04/polls/static/images/\320\276\320\276\320\276 014\320\
+260.jpg"
+        new file:   "NDM04/polls/static/images/\320\276\320\276\320\276 055.jpg"
+
+        new file:   "NDM04/polls/static/images/\320\276\320\276\320\276 185.jpg"
+
+        new file:   "NDM04/polls/static/images/\321\204\320\276\321\202\320\276\
+320\235\320\265\320\276\320\277\321\200\320\265\320\264\320\265\320\273\320\265\
+320\275\320\275\320\276\321\201\321\202\321\214.JPG"
+        new file:   NDM04/polls/templates/about.html
+        new file:   NDM04/polls/templates/contact.html
+        new file:   NDM04/polls/templates/polls/index.html
+        new file:   NDM04/polls/templates/polls/rgd01.html
+        new file:   NDM04/polls/templates/polls/uzd01.html
+        new file:   "NDM04/polls/templates/polls/\320\260\320\272\321\202\320\27
+0\320\262\320\275\320\276\321\201\321\202\321\21401.html"
+        new file:   "NDM04/polls/templates/polls/\320\277\320\260\320\275\320\27
+6\321\200\320\260\320\274\320\26001.html"
+        new file:   NDM04/polls/templates/tema01.html
+        new file:   NDM04/polls/tests.py
+        new file:   NDM04/polls/urls.py
+        new file:   NDM04/polls/views.py
+
+
+C:\Program Files\Git\django_NDM04>git commit -m "первая версия приложения перене
+
+[main ee1b584] первая версия приложения перене
+ 59 files changed, 1054 insertions(+)
+ create mode 100644 NDM04/NDM04/__init__.py
+ create mode 100644 NDM04/NDM04/asgi.py
+ create mode 100644 NDM04/NDM04/settings.py
+ create mode 100644 NDM04/NDM04/urls.py
+ create mode 100644 NDM04/NDM04/wsgi.py
+ create mode 100644 NDM04/manage.py
+ create mode 100644 NDM04/polls/__init__.py
+ create mode 100644 NDM04/polls/admin.py
+ create mode 100644 NDM04/polls/apps.py
+ create mode 100644 NDM04/polls/forms.py
+ create mode 100644 NDM04/polls/migrations/0001_initial.py
+ create mode 100644 NDM04/polls/migrations/__init__.py
+ create mode 100644 NDM04/polls/models.py
+ create mode 100644 NDM04/polls/static/css/styles.css
+ create mode 100644 "NDM04/polls/static/images/200326\321\201\320\260\320\274\32
+1\201\321\203\320\275\320\263 018.gif"
+ create mode 100644 NDM04/polls/static/images/image.GIF
+ create mode 100644 NDM04/polls/static/images/image1.jpg
+ create mode 100644 NDM04/polls/static/images/image10.jpg
+ create mode 100644 NDM04/polls/static/images/image11.jpg
+ create mode 100644 NDM04/polls/static/images/image112.jpg
+ create mode 100644 NDM04/polls/static/images/image11_1.jpg
+ create mode 100644 NDM04/polls/static/images/image11_2.jpg
+ create mode 100644 NDM04/polls/static/images/image13.jpg
+ create mode 100644 NDM04/polls/static/images/image14.jpg
+ create mode 100644 NDM04/polls/static/images/image15.jpg
+ create mode 100644 NDM04/polls/static/images/image16.jpg
+ create mode 100644 NDM04/polls/static/images/image17.jpg
+ create mode 100644 NDM04/polls/static/images/image18.jpg
+ create mode 100644 NDM04/polls/static/images/image19.jpg
+ create mode 100644 NDM04/polls/static/images/image22.jpg
+ create mode 100644 NDM04/polls/static/images/image222.JPG
+ create mode 100644 NDM04/polls/static/images/image3.jpg
+ create mode 100644 NDM04/polls/static/images/image4.jpg
+ create mode 100644 NDM04/polls/static/images/image5.jpg
+ create mode 100644 NDM04/polls/static/images/image6.jpg
+ create mode 100644 NDM04/polls/static/images/image7.jpg
+ create mode 100644 NDM04/polls/static/images/image8.jpg
+ create mode 100644 NDM04/polls/static/images/image9.jpg
+ create mode 100644 NDM04/polls/static/images/uzd02.jpg
+ create mode 100644 "NDM04/polls/static/images/\320\241\320\275\320\270\320\274\
+320\276\320\272111.JPG"
+ create mode 100644 "NDM04/polls/static/images/\320\270\320\270\320\270 321.jpg"
+
+ create mode 100644 "NDM04/polls/static/images/\320\270\320\270\320\270 393.jpg"
+
+ create mode 100644 "NDM04/polls/static/images/\320\276\320\276\320\276 012\320\
+260.jpg"
+ create mode 100644 "NDM04/polls/static/images/\320\276\320\276\320\276 014\320\
+260.jpg"
+ create mode 100644 "NDM04/polls/static/images/\320\276\320\276\320\276 055.jpg"
+
+ create mode 100644 "NDM04/polls/static/images/\320\276\320\276\320\276 185.jpg"
+
+ create mode 100644 "NDM04/polls/static/images/\321\204\320\276\321\202\320\276\
+320\235\320\265\320\276\320\277\321\200\320\265\320\264\320\265\320\273\320\265\
+320\275\320\275\320\276\321\201\321\202\321\214.JPG"
+ create mode 100644 NDM04/polls/templates/about.html
+ create mode 100644 NDM04/polls/templates/contact.html
+ create mode 100644 NDM04/polls/templates/polls/index.html
+ create mode 100644 NDM04/polls/templates/polls/rgd01.html
+ create mode 100644 NDM04/polls/templates/polls/uzd01.html
+ create mode 100644 "NDM04/polls/templates/polls/\320\260\320\272\321\202\320\27
+0\320\262\320\275\320\276\321\201\321\202\321\21401.html"
+ create mode 100644 "NDM04/polls/templates/polls/\320\277\320\260\320\275\320\27
+6\321\200\320\260\320\274\320\26001.html"
+ create mode 100644 NDM04/polls/templates/tema01.html
+ create mode 100644 NDM04/polls/tests.py
+ create mode 100644 NDM04/polls/urls.py
+ create mode 100644 NDM04/polls/views.py
+
+C:\Program Files\Git\django_NDM04>сена на github"
+"сена" не является внутренней или внешней
+командой, исполняемой программой или пакетным файлом.
+
+C:\Program Files\Git\django_NDM04>git commit -m "первая версия приложения перене
+
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Program Files\Git\django_NDM04>сена на github"
+
